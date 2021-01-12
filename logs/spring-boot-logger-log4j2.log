@@ -1,0 +1,620 @@
+"17:58:14.224 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""17:58:14.233 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""17:58:14.234 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""17:58:14.276 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""17:58:14.277 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""17:58:14.279 INFO  org.springframework.boot.logging.DeferredLog 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""17:58:14.280 INFO  org.springframework.boot.logging.DeferredLog 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""17:58:14.954 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""17:58:15.034 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+""17:58:15.329 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""17:58:15.398 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""17:58:15.430 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""17:58:16.086 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""17:58:16.093 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""17:58:16.094 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""17:58:16.095 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""17:58:16.199 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""17:58:16.199 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1917 ms
+""17:58:16.256 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-1 - Starting...
+""17:58:16.401 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-1 - Start completed.
+""17:58:16.407 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""17:58:16.592 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""17:58:16.683 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""17:58:16.720 INFO  org.hibernate.Version 44 logVersion - HHH000412: Hibernate ORM core version 5.4.25.Final
+""17:58:16.844 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager 56 <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""17:58:16.965 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""17:58:17.696 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""17:58:17.705 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""17:58:17.809 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""17:58:17.963 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""17:58:18.815 INFO  org.springframework.security.web.DefaultSecurityFilterChain 51 <init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4530b701, org.springframework.security.web.context.SecurityContextPersistenceFilter@3595ca86, org.springframework.security.web.header.HeaderWriterFilter@258c5137, org.springframework.security.web.authentication.logout.LogoutFilter@46312ba0, com.sl.ms.inventorymanagement.config.JwtRequestFilter@5b7878de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3aa2e73d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10cce311, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@590409e0, org.springframework.security.web.session.SessionManagementFilter@7fd076f8, org.springframework.security.web.access.ExceptionTranslationFilter@2d4087cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7451418e]
+""17:58:19.036 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 181 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""17:58:19.752 INFO  org.springframework.cloud.sleuth.otel.propagation.CompositeTextMapPropagator 81 <init> - Registered the following context propagation types [B3, JAEGER, OT_TRACER, CUSTOM, AWS, W3C]
+""17:58:19.926 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-7777"]
+""17:58:19.965 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 7777 (http) with context path '/dev'
+""17:58:20.071 INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started InventoryManagementApplication in 6.443 seconds (JVM running for 7.347)
+""18:02:39.719 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""18:02:39.720 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+""18:02:39.724 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 2 ms
+""18:08:23.023 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 218 shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""18:08:23.032 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:08:23.033 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:08:23.279 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:08:23.287 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-1 - Shutdown initiated...
+""18:08:23.294 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-1 - Shutdown completed.
+""18:08:23.500 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:08:23.501 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:08:23.501 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:08:23.503 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:08:23.503 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:08:23.697 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:08:23.708 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+""18:08:23.766 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:08:23.774 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:08:23.775 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:08:23.902 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:08:23.903 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:08:23.903 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:08:23.904 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:08:23.950 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:08:23.950 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 447 ms
+""18:08:23.979 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-2 - Starting...
+""18:08:23.981 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-2 - Start completed.
+""18:08:23.981 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:08:24.070 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:08:24.100 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:08:24.104 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:08:24.139 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:08:24.140 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:08:24.211 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:08:24.251 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:08:24.596 INFO  org.springframework.security.web.DefaultSecurityFilterChain 51 <init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b57c6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d2a0af6, org.springframework.security.web.header.HeaderWriterFilter@1e4da19f, org.springframework.security.web.authentication.logout.LogoutFilter@68ca9e10, com.sl.ms.inventorymanagement.config.JwtRequestFilter@fada953, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@763e1222, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ceaf669, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@456db888, org.springframework.security.web.session.SessionManagementFilter@71d18b1c, org.springframework.security.web.access.ExceptionTranslationFilter@4974027e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@258e5973]
+""18:08:24.702 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 181 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""18:08:25.032 INFO  org.springframework.cloud.sleuth.otel.propagation.CompositeTextMapPropagator 81 <init> - Registered the following context propagation types [B3, JAEGER, OT_TRACER, CUSTOM, AWS, W3C]
+""18:08:25.092 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-7777"]
+""18:08:25.095 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 7777 (http) with context path '/dev'
+""18:08:25.225 INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started InventoryManagementApplication in 1.836 seconds (JVM running for 612.502)
+""18:08:25.231 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+""18:08:44.545 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 218 shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""18:08:44.567 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:08:44.568 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:08:44.777 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:08:44.786 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-2 - Shutdown initiated...
+""18:08:44.788 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-2 - Shutdown completed.
+""18:08:45.095 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:08:45.096 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:08:45.096 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:08:45.099 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:08:45.099 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:08:45.277 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:08:45.287 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+""18:08:45.339 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:08:45.347 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:08:45.348 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:08:45.488 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:08:45.489 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:08:45.489 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:08:45.489 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:08:45.516 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:08:45.516 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 417 ms
+""18:08:45.543 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-3 - Starting...
+""18:08:45.545 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-3 - Start completed.
+""18:08:45.546 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:08:45.643 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:08:45.675 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:08:45.679 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:08:45.714 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:08:45.715 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:08:45.756 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:08:45.794 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:08:46.101 INFO  org.springframework.security.web.DefaultSecurityFilterChain 51 <init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53eaa1ae, org.springframework.security.web.context.SecurityContextPersistenceFilter@779855ba, org.springframework.security.web.header.HeaderWriterFilter@309cf0f5, org.springframework.security.web.authentication.logout.LogoutFilter@5057f3b0, com.sl.ms.inventorymanagement.config.JwtRequestFilter@74ddac4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68846811, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44d5065f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48dae401, org.springframework.security.web.session.SessionManagementFilter@60f24c3c, org.springframework.security.web.access.ExceptionTranslationFilter@7cb1b5f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ced3b2]
+""18:08:46.208 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 181 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""18:08:46.538 INFO  org.springframework.cloud.sleuth.otel.propagation.CompositeTextMapPropagator 81 <init> - Registered the following context propagation types [B3, JAEGER, OT_TRACER, CUSTOM, AWS, W3C]
+""18:08:46.612 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-7777"]
+""18:08:46.615 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 7777 (http) with context path '/dev'
+""18:08:46.687 INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started InventoryManagementApplication in 1.785 seconds (JVM running for 633.964)
+""18:08:46.689 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+""18:08:59.795 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""18:08:59.797 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+""18:08:59.798 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 0 ms
+""18:08:59.812 INFO  com.sl.ms.inventorymanagement.product.ProductController 96 getAvailableProducts - Reached Inventory API 
+""18:08:59.824 INFO  com.sl.ms.inventorymanagement.product.ProductController 96 getAvailableProducts - Reached Inventory API 
+""18:13:04.735 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 218 shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""18:13:04.739 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:13:04.739 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:13:04.944 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:13:04.946 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-3 - Shutdown initiated...
+""18:13:04.948 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-3 - Shutdown completed.
+""18:13:05.188 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:13:05.189 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:13:05.189 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:13:05.190 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:13:05.190 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:13:05.339 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:13:05.351 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+""18:13:05.398 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:13:05.405 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:13:05.407 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:13:05.525 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:13:05.525 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:13:05.526 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:13:05.526 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:13:05.552 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:13:05.552 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 361 ms
+""18:13:05.581 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-4 - Starting...
+""18:13:05.583 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-4 - Start completed.
+""18:13:05.583 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:13:05.670 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:13:05.703 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:13:05.708 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:13:05.747 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:13:05.748 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:13:05.784 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:13:05.821 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:13:05.881 WARN  org.springframework.context.support.AbstractApplicationContext 596 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Duplicate field ProductController.log
+	Duplicate field ProductController.log
+
+""18:13:05.881 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:13:05.882 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:13:06.085 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:13:06.087 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelSlf4jBaggageSpanProcessor' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:13:06.088 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelTracerProvider' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:13:06.089 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-4 - Shutdown initiated...
+""18:13:06.091 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-4 - Shutdown completed.
+""18:13:06.092 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+""18:13:06.115 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""18:13:06.152 ERROR org.springframework.boot.SpringApplication 856 reportFailure - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Duplicate field ProductController.log
+	Duplicate field ProductController.log
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-2.4.1.jar:2.4.1]
+	at com.sl.ms.inventorymanagement.InventoryManagementApplication.main(InventoryManagementApplication.java:12) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.1.jar:2.4.1]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Duplicate field ProductController.log
+	Duplicate field ProductController.log
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Duplicate field ProductController.log
+	Duplicate field ProductController.log
+
+	at com.sl.ms.inventorymanagement.product.ProductController.<init>(ProductController.java:59) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+
+""18:13:09.933 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:13:09.934 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:13:09.934 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:13:09.938 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:13:09.938 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:13:10.099 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:13:10.113 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+""18:13:10.166 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:13:10.173 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:13:10.174 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:13:10.292 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:13:10.292 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:13:10.293 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:13:10.293 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:13:10.330 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:13:10.330 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 392 ms
+""18:13:10.380 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-5 - Starting...
+""18:13:10.382 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-5 - Start completed.
+""18:13:10.382 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:13:10.467 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:13:10.499 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:13:10.502 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:13:10.537 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:13:10.537 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:13:10.609 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:13:10.646 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:13:10.699 WARN  org.springframework.context.support.AbstractApplicationContext 596 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+""18:13:10.700 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:13:10.700 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:13:10.902 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:13:10.904 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelSlf4jBaggageSpanProcessor' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:13:10.906 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelTracerProvider' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:13:10.907 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-5 - Shutdown initiated...
+""18:13:10.910 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-5 - Shutdown completed.
+""18:13:10.912 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+""18:13:10.936 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""18:13:10.942 ERROR org.springframework.boot.SpringApplication 856 reportFailure - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-2.4.1.jar:2.4.1]
+	at com.sl.ms.inventorymanagement.InventoryManagementApplication.main(InventoryManagementApplication.java:12) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.1.jar:2.4.1]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+	at com.sl.ms.inventorymanagement.product.ProductController.<init>(ProductController.java:61) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+
+""18:13:53.020 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:13:53.020 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:13:53.021 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:13:53.023 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:13:53.023 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:13:53.180 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:13:53.190 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+""18:13:53.240 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:13:53.248 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:13:53.249 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:13:53.419 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:13:53.420 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:13:53.421 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:13:53.421 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:13:53.462 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:13:53.462 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 439 ms
+""18:13:53.495 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-6 - Starting...
+""18:13:53.498 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-6 - Start completed.
+""18:13:53.498 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:13:53.592 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:13:53.623 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:13:53.627 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:13:53.657 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:13:53.658 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:13:53.695 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:13:53.759 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:13:53.813 WARN  org.springframework.context.support.AbstractApplicationContext 596 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.slf4j.Logger collides with another import statement
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+""18:13:53.814 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:13:53.814 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:13:54.016 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:13:54.018 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelSlf4jBaggageSpanProcessor' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:13:54.020 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelTracerProvider' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:13:54.021 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-6 - Shutdown initiated...
+""18:13:54.023 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-6 - Shutdown completed.
+""18:13:54.024 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+""18:13:54.047 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""18:13:54.053 ERROR org.springframework.boot.SpringApplication 856 reportFailure - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.slf4j.Logger collides with another import statement
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-2.4.1.jar:2.4.1]
+	at com.sl.ms.inventorymanagement.InventoryManagementApplication.main(InventoryManagementApplication.java:12) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.1.jar:2.4.1]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.slf4j.Logger collides with another import statement
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.slf4j.Logger collides with another import statement
+	Type mismatch: cannot convert from org.slf4j.Logger to org.apache.logging.log4j.Logger
+
+	at com.sl.ms.inventorymanagement.product.ProductController.<init>(ProductController.java:11) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+
+""18:14:09.725 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:14:09.725 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:14:09.725 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:14:09.727 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:14:09.727 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:14:09.889 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:14:09.899 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+""18:14:09.947 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:14:09.955 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:14:09.957 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:14:10.075 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:14:10.075 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:14:10.075 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:14:10.076 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:14:10.103 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:14:10.103 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 376 ms
+""18:14:10.136 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-7 - Starting...
+""18:14:10.138 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-7 - Start completed.
+""18:14:10.138 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:14:10.219 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:14:10.249 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:14:10.252 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:14:10.277 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:14:10.278 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:14:10.319 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:14:10.358 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:14:10.412 WARN  org.springframework.context.support.AbstractApplicationContext 596 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	LogManager cannot be resolved
+	The method traceEntry(String) is undefined for the type Logger
+	The method traceExit(List<Product>) is undefined for the type Logger
+
+""18:14:10.412 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:14:10.412 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:14:10.614 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:14:10.617 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelSlf4jBaggageSpanProcessor' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:14:10.619 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 349 invokeCustomDestroyMethod - Destroy method 'shutdown' on bean with name 'otelTracerProvider' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'otelTracerBridge': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+""18:14:10.620 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-7 - Shutdown initiated...
+""18:14:10.622 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-7 - Shutdown completed.
+""18:14:10.623 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Stopping service [Tomcat]
+""18:14:10.646 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 136 logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""18:14:10.653 ERROR org.springframework.boot.SpringApplication 856 reportFailure - Application run failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in file [D:\SpringToolSuite\InventoryManagement\target\classes\com\sl\ms\inventorymanagement\product\ProductController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	LogManager cannot be resolved
+	The method traceEntry(String) is undefined for the type Logger
+	The method traceExit(List<Product>) is undefined for the type Logger
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.2.jar:5.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) [spring-boot-2.4.1.jar:2.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) [spring-boot-2.4.1.jar:2.4.1]
+	at com.sl.ms.inventorymanagement.InventoryManagementApplication.main(InventoryManagementApplication.java:12) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.1.jar:2.4.1]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.sl.ms.inventorymanagement.product.ProductController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	LogManager cannot be resolved
+	The method traceEntry(String) is undefined for the type Logger
+	The method traceExit(List<Product>) is undefined for the type Logger
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	LogManager cannot be resolved
+	The method traceEntry(String) is undefined for the type Logger
+	The method traceExit(List<Product>) is undefined for the type Logger
+
+	at com.sl.ms.inventorymanagement.product.ProductController.<init>(ProductController.java:60) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.2.jar:5.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.3.2.jar:5.3.2]
+	... 23 more
+
+""18:14:15.237 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:14:15.238 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:14:15.238 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:14:15.240 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:14:15.240 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:14:15.447 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:14:15.457 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+""18:14:15.509 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:14:15.515 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:14:15.516 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:14:15.638 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:14:15.638 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:14:15.639 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:14:15.639 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:14:15.681 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:14:15.681 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 441 ms
+""18:14:15.714 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-8 - Starting...
+""18:14:15.716 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-8 - Start completed.
+""18:14:15.716 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:14:15.797 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:14:15.829 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:14:15.831 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:14:15.857 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:14:15.857 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:14:15.894 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:14:15.935 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:14:16.175 INFO  org.springframework.security.web.DefaultSecurityFilterChain 51 <init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dc67397, org.springframework.security.web.context.SecurityContextPersistenceFilter@79e020b1, org.springframework.security.web.header.HeaderWriterFilter@39bfa801, org.springframework.security.web.authentication.logout.LogoutFilter@1cebd246, com.sl.ms.inventorymanagement.config.JwtRequestFilter@33b84823, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51b07f5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@385c67c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@492ea342, org.springframework.security.web.session.SessionManagementFilter@633fd94a, org.springframework.security.web.access.ExceptionTranslationFilter@23d5f852, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7afcd64a]
+""18:14:16.274 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 181 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""18:14:16.588 INFO  org.springframework.cloud.sleuth.otel.propagation.CompositeTextMapPropagator 81 <init> - Registered the following context propagation types [B3, JAEGER, OT_TRACER, CUSTOM, AWS, W3C]
+""18:14:16.673 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-7777"]
+""18:14:16.676 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 7777 (http) with context path '/dev'
+""18:14:16.809 INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started InventoryManagementApplication in 1.681 seconds (JVM running for 964.086)
+""18:14:16.813 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+""18:14:21.990 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 218 shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""18:14:21.994 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:14:21.994 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:14:22.201 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:14:22.206 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-8 - Shutdown initiated...
+""18:14:22.207 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-8 - Shutdown completed.
+""18:14:22.433 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:14:22.433 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:14:22.434 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:14:22.435 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:14:22.435 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:14:22.584 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:14:22.593 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+""18:14:22.644 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:14:22.651 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:14:22.653 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:14:22.797 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:14:22.797 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:14:22.798 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:14:22.798 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:14:22.833 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:14:22.833 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 398 ms
+""18:14:22.861 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-9 - Starting...
+""18:14:22.862 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-9 - Start completed.
+""18:14:22.863 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:14:22.945 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:14:22.975 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:14:22.979 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:14:23.005 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:14:23.005 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:14:23.041 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:14:23.075 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:14:23.322 INFO  org.springframework.security.web.DefaultSecurityFilterChain 51 <init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bfad864, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d032179, org.springframework.security.web.header.HeaderWriterFilter@6d97dd5, org.springframework.security.web.authentication.logout.LogoutFilter@31f386a2, com.sl.ms.inventorymanagement.config.JwtRequestFilter@57463fe9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ac929ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26e95a01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@457bda17, org.springframework.security.web.session.SessionManagementFilter@659f2538, org.springframework.security.web.access.ExceptionTranslationFilter@28c219f5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5083d8cf]
+""18:14:23.429 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 181 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""18:14:23.748 INFO  org.springframework.cloud.sleuth.otel.propagation.CompositeTextMapPropagator 81 <init> - Registered the following context propagation types [B3, JAEGER, OT_TRACER, CUSTOM, AWS, W3C]
+""18:14:23.808 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-7777"]
+""18:14:23.811 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 7777 (http) with context path '/dev'
+""18:14:23.879 INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started InventoryManagementApplication in 1.553 seconds (JVM running for 971.156)
+""18:14:23.881 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+""18:14:44.286 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 218 shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""18:14:44.289 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:14:44.290 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:14:44.497 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:14:44.502 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-9 - Shutdown initiated...
+""18:14:44.503 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-9 - Shutdown completed.
+""18:14:44.815 INFO  org.springframework.boot.StartupInfoLogger 55 logStarting - Starting InventoryManagementApplication using Java 15 on DESKTOP-VHN3FED with PID 3152 (D:\SpringToolSuite\InventoryManagement\target\classes started by muthu in D:\SpringToolSuite\InventoryManagement)
+""18:14:44.816 DEBUG org.springframework.boot.StartupInfoLogger 56 logStarting - Running with Spring Boot v2.4.1, Spring v5.3.2
+""18:14:44.817 INFO  org.springframework.boot.SpringApplication 664 logStartupProfileInfo - The following profiles are active: dev
+""18:14:44.823 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 13:13]
+""18:14:44.823 WARN  org.springframework.boot.logging.DeferredLog 258 logTo - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 5:13]
+""18:14:45.088 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 128 registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""18:14:45.097 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate 188 registerRepositoriesIn - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+""18:14:45.144 INFO  org.springframework.cloud.context.scope.GenericScope 288 setSerializationId - BeanFactory id=f0601780-89af-3f6a-a1ae-4df19e251121
+""18:14:45.151 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 350 postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e12629f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""18:14:45.152 INFO  org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping 236 afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+""18:14:45.269 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 7777 (http)
+""18:14:45.270 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing ProtocolHandler ["http-nio-7777"]
+""18:14:45.270 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting service [Tomcat]
+""18:14:45.270 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting Servlet engine: [Apache Tomcat/9.0.41]
+""18:14:45.296 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring embedded WebApplicationContext
+""18:14:45.297 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
+""18:14:45.326 INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-10 - Starting...
+""18:14:45.327 INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-10 - Start completed.
+""18:14:45.328 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration 68 lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+""18:14:45.408 DEBUG org.springframework.web.filter.GenericFilterBean 242 init - Filter 'jwtRequestFilter' configured for use
+""18:14:45.440 INFO  org.hibernate.jpa.internal.util.LogHelper 31 logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+""18:14:45.442 INFO  org.hibernate.dialect.Dialect 175 <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""18:14:45.466 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator 52 initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""18:14:45.467 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 437 buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""18:14:45.528 WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 61 startServer - Unable to start LiveReload server
+""18:14:45.571 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration 221 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""18:14:45.808 INFO  org.springframework.security.web.DefaultSecurityFilterChain 51 <init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41a2df58, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ecaf8e9, org.springframework.security.web.header.HeaderWriterFilter@6f7f5f91, org.springframework.security.web.authentication.logout.LogoutFilter@5ba943e7, com.sl.ms.inventorymanagement.config.JwtRequestFilter@4a435572, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a5fea41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53da7c60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29d3e44f, org.springframework.security.web.session.SessionManagementFilter@550b9b41, org.springframework.security.web.access.ExceptionTranslationFilter@7495d00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a8d4d21]
+""18:14:45.906 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 181 initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""18:14:46.204 INFO  org.springframework.cloud.sleuth.otel.propagation.CompositeTextMapPropagator 81 <init> - Registered the following context propagation types [B3, JAEGER, OT_TRACER, CUSTOM, AWS, W3C]
+""18:14:46.264 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Starting ProtocolHandler ["http-nio-7777"]
+""18:14:46.267 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 7777 (http) with context path '/dev'
+""18:14:46.371 INFO  org.springframework.boot.StartupInfoLogger 61 logStarted - Started InventoryManagementApplication in 1.738 seconds (JVM running for 993.648)
+""18:14:46.376 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+""18:15:02.154 INFO  org.apache.juli.logging.DirectJDKLog 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""18:15:02.155 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+""18:15:02.156 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1 ms
+""18:15:02.161 INFO  com.sl.ms.inventorymanagement.product.ProductController 101 getAvailableProducts - Reached Inventory API 
+""18:15:02.167 INFO  com.sl.ms.inventorymanagement.product.ProductController 101 getAvailableProducts - Reached Inventory API 
+""18:23:19.099 INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin 159 shutdown - Application shutdown requested.
+""18:23:19.132 INFO  org.springframework.scheduling.concurrent.ExecutorConfigurationSupport 218 shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""18:23:19.135 INFO  org.springframework.orm.jpa.AbstractEntityManagerFactoryBean 651 destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+""18:23:19.136 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl 526 perform - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+""18:23:19.340 WARN  org.springframework.beans.factory.support.DisposableBeanAdapter 267 destroy - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""18:23:19.343 INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-10 - Shutdown initiated...
+""18:23:19.393 INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-10 - Shutdown completed.
+"

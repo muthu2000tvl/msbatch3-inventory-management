@@ -1,0 +1,20 @@
+spring:
+  profiles.active: dev
+---
+spring:
+  profiles: dev
+server:
+  servlet:
+    context-path: /dev
+  port : 7777
+  
+---
+spring:
+  profiles: production
+server:
+  servlet:
+    context-path: /
+  port : 7999
+
+     
+    
