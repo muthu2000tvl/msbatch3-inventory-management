@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: inv-management-deployment
+   labels:
+     app: inv-management
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inv-management
+  template:
+    metadata:
+      labels:
+        app: inv-management
+    spec:
+     containers:
+     - name: inv-management
+       image: muthu2000tvl/inventory-management
+       ports:
+         - containerPort: 9999
+     
